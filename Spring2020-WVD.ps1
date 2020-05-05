@@ -15,7 +15,7 @@ $rsg="rsg-wvd052020"
 $workspace="Workspace052020"
 $appgroupname = "HostPool05022020-DAG"
 $remoteapp='Remote App'
-New-AzWvdHostPool -ResourceGroupName <resourcegroupname> -Name <hostpoolname> -WorkspaceName <workspacename> -HostPoolType <RemoteApp|Desktop>  -Location -DesktopAppGroupName <appgroupname>
+#New-AzWvdHostPool -ResourceGroupName <resourcegroupname> -Name <hostpoolname> -WorkspaceName <workspacename> -HostPoolType <RemoteApp|Desktop>  -Location -DesktopAppGroupName <appgroupname>
 Get-AzWvdHostPool -ResourceGroupName $rsg -Name $hostPool -SubscriptionId $subscription
 
 # Assign users to the default desktop app group
