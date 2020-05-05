@@ -12,7 +12,7 @@ Import-Module -Name Microsoft.RDInfra.RDPowerShell
 Update-Module -Name Microsoft.RDInfra.RDPowerShell
 Install-Module -Name Az -AllowClobber -Force
 Import-Module -Name AzureAD
-# this is a test
+
 # STEP ONE - Login on WVD Desktop Tenant
 Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
 
