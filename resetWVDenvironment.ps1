@@ -6,6 +6,13 @@
 $tenant = "rbiagtangmail.onmicrosoft.com"
 $Hostpool = "WVD-0420" # note: to get RDS Host Pool Name use: Get-RdsHostPool -tenant $tenant 
 
+# STEP ZERO - Download & Install WVD Cmdlets
+Install-Module -Name Microsoft.RDInfra.RDPowerShell -Force
+Import-Module -Name Microsoft.RDInfra.RDPowerShell
+Update-Module -Name Microsoft.RDInfra.RDPowerShell
+Install-Module -Name Az -AllowClobber -Force
+Import-Module -Name AzureAD
+# this is a test
 # STEP ONE - Login on WVD Desktop Tenant
 Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
 
