@@ -1,0 +1,19 @@
+#Launch powershell from Terminal window
+pwsh
+
+#Import the Azure module
+install-module -name Az -AllowClobber
+
+#Connect to Azure and login
+Connect-AzAccount
+
+#Commands to run 
+# not needed for Mac# Set-executionpolicy -executionpolicy unrestricted
+Install-Module -Name Microsoft.RDInfra.RDPowerShell -Force
+Import-Module -Name Microsoft.RDInfra.RDPowerShell
+Install-Module -Name Az -AllowClobber -Force
+Import-Module -Name Az
+
+#Add RDS AzAccount
+Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
+
